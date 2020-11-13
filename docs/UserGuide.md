@@ -94,7 +94,7 @@ the program considers the user to be on track.
           E - Expected workload <br>
           A - Actual time spent
 
-### 2.1 View help: `help` <a name="help"></a>
+### 2.1 View help: `help` <a name="help"></a> (by Hao Yuan)
 Displays a list of all available commands that you can use.
 
 Format: `help`
@@ -135,7 +135,7 @@ Available Commands:
 18.exit
 ````
 
-### 2.2 Add a module: `addmod` <a name="addmod"></a>
+### 2.2 Add a module: `addmod` <a name="addmod"></a> (by Kenneth)
 Adds a new module to track your time spent on it and tasks related to it.
 
 Format: `addmod <module code>`
@@ -153,7 +153,7 @@ Expected output:
 CS2113T is added.
 ````
 
-### 2.3 Add expected module workload: `addexp` <a name="addexp"></a>
+### 2.3 Add expected module workload: `addexp` <a name="addexp"></a> (by Kenneth)
 Adds the expected workload of the given module to the database. 
 Every module in NUS has an expected workload, which is the expected 
 number of hours of preparatory work required by a student per week.
@@ -176,7 +176,7 @@ Expected output(when CS2113T does not exist):
 CS2113T, Expected Workload: 10.0h is added.
 ````
 
-### 2.4 Add actual time spent on a module: `addtime` <a name="addtime"></a>
+### 2.4 Add actual time spent on a module: `addtime` <a name="addtime"></a> (by Desmond)
 Adds to the time you have spent on the indicated module, for that week. 
 After which, a summary of the total hours spent in that week will also be displayed.
  Time value will be rounded off to 1 decimal place.
@@ -197,7 +197,7 @@ Expected output:
 3.0 hours have been spent on this module in week 1.
 ````
 
-### 2.5 List expected and actual time spent of all modules: `list` <a name="list"></a>
+### 2.5 List expected and actual time spent of all modules: `list` <a name="list"></a> (by Gang Le)
 Shows a list of all of your modules, their expected module workload, 
 and the actual time spent you have spent on each of them for that specific week.
 
@@ -218,7 +218,7 @@ Expected output:
 +------+---------+----------+----------+
 ````
 
-### 2.6 Analyse actual time spent on all modules: `analyse` <a name="analyse"></a>
+### 2.6 Analyse actual time spent on all modules: `analyse` <a name="analyse"></a> (by Gang Le)
 To further analyse the data, you can use the `analyse` command.
 It shows the breakdown and analysis of your
 time spent on each module for the specific week.
@@ -256,7 +256,7 @@ CS1231
 Good Job! Great time management!
 ````
  
-### 2.7 Delete a module: `deletemod` <a name="deletemod"></a>
+### 2.7 Delete a module: `deletemod` <a name="deletemod"></a> (by Kenneth)
 Deletes the specified module code from the database,
 together with all its related data, such as the time you have spent on it.
 
@@ -276,7 +276,7 @@ CS2113T is removed.
 All tasks under CS2113T are deleted.
 ````
 
-### 2.8 Delete expected module workload: `deleteexp` <a name="deleteexp"></a>
+### 2.8 Delete expected module workload: `deleteexp` <a name="deleteexp"></a> (by Kenneth)
 Deletes the expected workload of the specified module code from the database.
 
 Format: `deleteexp <module code>`
@@ -295,7 +295,7 @@ Expected output:
 Expected Workload of CS2113T is removed.
 ````
 
-### 2.9 Minus from actual time spent on a module: `minustime` <a name="minus"></a>
+### 2.9 Minus from actual time spent on a module: `minustime` <a name="minus"></a> (by Desmond)
 Minus the actual time you have spent on a specified module. 
 After which, a summary of the total hours spent in that week will also be displayed. 
 Time value will be rounded off to 1 decimal place.
@@ -316,7 +316,7 @@ Expected output:
 2.0 hours have been spent on this module in week 1.
 ````
 
-### 2.10 Edit actual time spent on a module: `edittime` <a name="edit"></a>
+### 2.10 Edit actual time spent on a module: `edittime` <a name="edit"></a> (by Desmond)
 Edits the actual time you have spent on a specified module for that week
 to the given value. Time value will be rounded off to 1 decimal place.
 
@@ -336,7 +336,7 @@ Expected output:
 3.0 hours have been spent on this module in week 1.
 ````
 
-### 2.11 Delete actual time spent on a module: `deletetime` <a name="deletetime"></a>
+### 2.11 Delete actual time spent on a module: `deletetime` <a name="deletetime"></a> (by Kenneth)
 Deletes the actual time you have spent on a specified module for that week.
 
 Format: `deletetime <module code> <week number>` 
@@ -356,7 +356,7 @@ Expected output:
 Actual time of CS2113T of week 3 is removed.
 ````
 
-### 2.12 Add tasks: `addtask` <a name="addtask"></a>
+### 2.12 Add tasks: `addtask` <a name="addtask"></a> (by Hao Yuan)
 Adds a task which is required by the specified module.
 
 Format: `addtask <module code> <task description>`
@@ -375,7 +375,7 @@ Got it. I've added this task under CS2113T:
 Now you have 1 task in the list.
 ````
 
-### 2.13 List all tasks: `listtask` <a name="listtask"></a>
+### 2.13 List all tasks: `listtask` <a name="listtask"></a> (by Hao Yuan)
 Lists all tasks that you currently have, whether completed or not.
 
 Format: `listtask`
@@ -386,7 +386,7 @@ Here are the tasks in your list:
 1. [X] [CS2113T] finish project
 ````
 
-### 2.14 Mark task as done: `done` <a name="done"></a>
+### 2.14 Mark task as done: `done` <a name="done"></a> (by Hao Yuan)
 Marks the specified task as done in your task list,
 so that you can keep track of what you have completed.
 
@@ -405,7 +405,7 @@ Nice! I've marked this task as done:
 [/] [CS2113T] finish project
 ````
 
-### 2.15 Delete a task: `deletetask` <a name="deletetask"></a>
+### 2.15 Delete a task: `deletetask` <a name="deletetask"></a> (by Hao Yuan)
 Deletes a specified task from your task list.
 
 Format: `deletetask <task number>`
@@ -423,7 +423,7 @@ Noted. I've removed this task:
 You currently have no task :-)
 ````
 
-### 2.16 Open notification: `open` <a name="open"></a>
+### 2.16 Open notification: `open` <a name="open"></a> (by Kenneth)
 Opens the notification which contains a randomised encouraging message.
 The notification will give the user an update 
 on the progress of the current week.
@@ -447,7 +447,7 @@ The harder you work, the closer you are to success!
 
 Note: The actual output may differ as the encouraging message is random.
 
-### 2.17 Save user data <a name="save"></a>
+### 2.17 Save user data <a name="save"></a> (by Chin Tian)
 The program will save your data such as your name, modules, time spent and tasks
 to the hard disk automatically. There is no need to save these manually. 
 
@@ -458,7 +458,7 @@ continuing from where you left off.
 The external file which stores your data will be locked to read-only 
 when it is not in use, keeping your data safe and secure.
 
-### 2.18 Clear module and task data: `clear` <a name="clear"></a>
+### 2.18 Clear module and task data: `clear` <a name="clear"></a> (by Chin Tian)
 Deletes all module and tasks data.
 The program will also prompt the user to confirm this action.
 
@@ -491,7 +491,7 @@ Expected output:
 Clearing of data not confirmed. Your data is safe :)
 ````
  
-### 2.19 Delete user data: `reset` <a name="reset"></a>
+### 2.19 Delete user data: `reset` <a name="reset"></a> (by Chin Tian)
 Deletes all module and tasks data, and the username, 
 effectively resetting the whole program.
 The program will also prompt the user to confirm this action.
@@ -540,7 +540,7 @@ Expected output:
 Reset not confirmed. Your data is safe :)
 ````
 
-### 2.20 Exit the program : `exit` <a name="exit"></a>
+### 2.20 Exit the program : `exit` <a name="exit"></a> (by Hao Yuan)
 Exits the program.
 
 Format: `exit`
